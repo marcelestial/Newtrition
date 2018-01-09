@@ -154,61 +154,61 @@ public class MainActivity extends AppCompatActivity {
                 && (!TextUtils.isEmpty(editText1.getText().toString()))
                 && TextUtils.isDigitsOnly(editText1.getText().toString())){
             unit = (Double.parseDouble(editText1.getText().toString()))/value1PerUnit;
-            editText2.setText("" + round((value2PerUnit * unit), 4));
-            editText3.setText("" + round((value3PerUnit * unit), 4));
-            editText4.setText("" + round((value4PerUnit * unit), 4));
-            editText5.setText("" + round((value5PerUnit * unit), 4));
-            editText6.setText("" + round((value6PerUnit * unit), 4));
+            editText2.setText("" + round((value2PerUnit * unit), 2));
+            editText3.setText("" + round((value3PerUnit * unit), 2));
+            editText4.setText("" + round((value4PerUnit * unit), 2));
+            editText5.setText("" + round((value5PerUnit * unit), 2));
+            editText6.setText("" + round((value6PerUnit * unit), 2));
         }
         else if (wasEdited == editText2.getEditableText()
                 && (!TextUtils.isEmpty(editText2.getText().toString()))
                 && TextUtils.isDigitsOnly(editText2.getText().toString())){
             unit = (Double.parseDouble(editText2.getText().toString()))/value2PerUnit;
-            editText1.setText("" + round((value1PerUnit * unit), 4));
-            editText3.setText("" + round((value3PerUnit * unit), 4));
-            editText4.setText("" + round((value4PerUnit * unit), 4));
-            editText5.setText("" + round((value5PerUnit * unit), 4));
-            editText6.setText("" + round((value6PerUnit * unit), 4));
+            editText1.setText("" + round((value1PerUnit * unit), 2));
+            editText3.setText("" + round((value3PerUnit * unit), 2));
+            editText4.setText("" + round((value4PerUnit * unit), 2));
+            editText5.setText("" + round((value5PerUnit * unit), 2));
+            editText6.setText("" + round((value6PerUnit * unit), 2));
         }
         else if (wasEdited == editText3.getEditableText()
                 && (!TextUtils.isEmpty(editText3.getText().toString()))
                 && TextUtils.isDigitsOnly(editText3.getText().toString())){
             unit = (Double.parseDouble(editText3.getText().toString()))/value3PerUnit;
-            editText1.setText("" + round((value1PerUnit * unit), 4));
-            editText2.setText("" + round((value2PerUnit * unit), 4));
-            editText4.setText("" + round((value4PerUnit * unit), 4));
-            editText5.setText("" + round((value5PerUnit * unit), 4));
-            editText6.setText("" + round((value6PerUnit * unit), 4));
+            editText1.setText("" + round((value1PerUnit * unit), 2));
+            editText2.setText("" + round((value2PerUnit * unit), 2));
+            editText4.setText("" + round((value4PerUnit * unit), 2));
+            editText5.setText("" + round((value5PerUnit * unit), 2));
+            editText6.setText("" + round((value6PerUnit * unit), 2));
         }
         else if (wasEdited == editText4.getEditableText()
                 && (!TextUtils.isEmpty(editText4.getText().toString()))
                 && TextUtils.isDigitsOnly(editText4.getText().toString())){
             unit = (Double.parseDouble(editText4.getText().toString()))/value4PerUnit;
-            editText1.setText("" + round((value1PerUnit * unit), 4));
-            editText2.setText("" + round((value2PerUnit * unit), 4));
-            editText3.setText("" + round((value3PerUnit * unit), 4));
-            editText5.setText("" + round((value5PerUnit * unit), 4));
-            editText6.setText("" + round((value6PerUnit * unit), 4));
+            editText1.setText("" + round((value1PerUnit * unit), 2));
+            editText2.setText("" + round((value2PerUnit * unit), 2));
+            editText3.setText("" + round((value3PerUnit * unit), 2));
+            editText5.setText("" + round((value5PerUnit * unit), 2));
+            editText6.setText("" + round((value6PerUnit * unit), 2));
         }
         else if (wasEdited == editText5.getEditableText()
                 && (!TextUtils.isEmpty(editText5.getText().toString()))
                 && TextUtils.isDigitsOnly(editText5.getText().toString())){
             unit = (Double.parseDouble(editText5.getText().toString()))/value5PerUnit;
-            editText1.setText("" + round((value1PerUnit * unit), 4));
-            editText2.setText("" + round((value2PerUnit * unit), 4));
-            editText3.setText("" + round((value3PerUnit * unit), 4));
-            editText4.setText("" + round((value4PerUnit * unit), 4));
-            editText6.setText("" + round((value6PerUnit * unit), 4));
+            editText1.setText("" + round((value1PerUnit * unit), 2));
+            editText2.setText("" + round((value2PerUnit * unit), 2));
+            editText3.setText("" + round((value3PerUnit * unit), 2));
+            editText4.setText("" + round((value4PerUnit * unit), 2));
+            editText6.setText("" + round((value6PerUnit * unit), 2));
         }
         else if (wasEdited == editText6.getEditableText()
                 && (!TextUtils.isEmpty(editText6.getText().toString()))
                 && TextUtils.isDigitsOnly(editText6.getText().toString())){
             unit = (Double.parseDouble(editText6.getText().toString()))/value6PerUnit;
-            editText1.setText("" + round((value1PerUnit * unit), 4));
-            editText2.setText("" + round((value2PerUnit * unit), 4));
-            editText3.setText("" + round((value3PerUnit * unit), 4));
-            editText4.setText("" + round((value4PerUnit * unit), 4));
-            editText5.setText("" + round((value5PerUnit * unit), 4));
+            editText1.setText("" + round((value1PerUnit * unit), 2));
+            editText2.setText("" + round((value2PerUnit * unit), 2));
+            editText3.setText("" + round((value3PerUnit * unit), 2));
+            editText4.setText("" + round((value4PerUnit * unit), 2));
+            editText5.setText("" + round((value5PerUnit * unit), 2));
         }
     }
 
