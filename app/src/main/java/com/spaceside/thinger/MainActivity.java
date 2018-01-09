@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText editText1, editText2, editText3, editText4, editText5, editText6; //numeric text fields
     ToggleButton lockButton; //button to toggle the "locked" state declared below
+    Button clearButton;
     boolean locked; //state representing whether fields are accurate in proportion to one another
     double unit; //an arbitrary unit proportionate to the values entered before fields are locked
     double value1PerUnit, value2PerUnit, value3PerUnit, value4PerUnit, value5PerUnit, value6PerUnit;
@@ -87,6 +88,8 @@ public class MainActivity extends AppCompatActivity {
         editText4.addTextChangedListener(watcher);
         editText5.addTextChangedListener(watcher);
         editText6.addTextChangedListener(watcher);
+
+        clearButton = (Button) findViewById(R.id.clear_button);
 
     }
 
@@ -234,6 +237,7 @@ public class MainActivity extends AppCompatActivity {
         preferenceSettings = getPreferences(Activity.MODE_PRIVATE);
 
         locked = preferenceSettings.getBoolean("isLocked", false);
+        lockButton.setChecked(locked);
 
         unit = Double.parseDouble(preferenceSettings.getString("units", "1"));
 
@@ -243,5 +247,28 @@ public class MainActivity extends AppCompatActivity {
         editText4.setText(preferenceSettings.getString("value4", ""));
         editText5.setText(preferenceSettings.getString("value5", ""));
         editText6.setText(preferenceSettings.getString("value6", ""));
+    }
+
+    public void clear(View view){
+
+        locked = false;
+        lockButton.setChecked(false);
+
+        editText1.setText("");
+        editText2.setText("");
+        editText3.setText("");
+        editText4.setText("");
+        editText5.setText("");
+        editText6.setText("");
+
+        unit = 0;
+
+        value1PerUnit = 0;
+        value2PerUnit = 0;
+        value3PerUnit = 0;
+        value4PerUnit = 0;
+        value5PerUnit = 0;
+        value6PerUnit = 0;
+
     }
 }
